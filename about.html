@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - RISE In Computing</title>
+    <style>
+        /* Same base styles as index.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #663399;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f6f8fa;
+            padding: 1rem;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #663399;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            color: #9370DB;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #663399;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .about-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .founders-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .founder-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .founder-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #663399;
+        }
+
+        .founder-card h3 {
+            color: #663399;
+            margin: 1rem 0;
+        }
+
+        .founder-bio {
+            text-align: left;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #663399;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .dropdown-content {
+                position: relative;
+            }
+
+            .founders-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About RISE In Computing</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#projects">Projects ▾</a>
+                <div class="dropdown-content">
+                    <a href="colab.html">Co-Lab</a>
+                    <a href="scholars.html">Scholars</a>
+                    <a href="stars.html">Stars</a>
+                    <a href="pinning.html">Pinning</a>
+                </div>
+            </li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about-section">
+            <h2>About Our Program</h2>
+            <p>RISE In Computing at GSU is dedicated to fostering an inclusive environment in computer science education, with a particular focus on supporting and empowering Black women in computing. Our program combines academic excellence with community building to create lasting change in the field of computer science.</p>
+        </section>
+
+        <section class="founders-section">
+            <div class="founder-card">
+                <img src="/api/placeholder/200/200" alt="Dr. Anu Bourgeois">
+                <h3>Dr. Anu Bourgeois</h3>
+                <p><strong>Co-founder</strong></p>
+                <div class="founder-bio">
+                    <p>Dr. Bourgeois is a Professor in the Computer Science Department at Georgia State University. Her expertise spans distributed computing, wireless networks, and computer science education.</p>
+                </div>
+            </div>
+            <div class="founder-card">
+                <img src="/api/placeholder/200/200" alt="Dr. Nannette Napier">
+                <h3>Dr. Nannette Napier</h3>
+                <p><strong>Co-founder</strong></p>
+                <div class="founder-bio">
+                    <p>Dr. Napier is a Professor in the Computer Science Department at Georgia State University. She specializes in software development, information systems, and computing education.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: [Contact Email]</p>
+                <p>Phone: [Contact Phone]</p>
+            </div>
+            <div>
+                <h3>Address</h3>
+                <p>Georgia State University</p>
+                <p>Department of Computer Science</p>
+                <p>[Building and Room Number]</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p>[Social Media Links]</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
