@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARS Program - RISE In Computing</title>
+    <style>
+        /* Base styles same as other pages */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #663399;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f6f8fa;
+            padding: 1rem;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #663399;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            color: #9370DB;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #663399;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero-section {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .hero-section img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .initiative-card {
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .initiative-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 3rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #663399;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #9370DB;
+        }
+
+        footer {
+            background-color: #663399;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .dropdown-content {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STARS Program</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#projects">Projects ▾</a>
+                <div class="dropdown-content">
+                    <a href="colab.html">Co-Lab</a>
+                    <a href="scholars.html">Scholars</a>
+                    <a href="stars.html">Stars</a>
+                    <a href="pinning.html">Pinning</a>
+                </div>
+            </li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <h2>Students & Technology in Academia, Research, and Service</h2>
+            <img src="/api/placeholder/1200/400" alt="STARS Program participants">
+            <p>The STARS Program integrates academic excellence, research opportunities, and community service to create well-rounded computing professionals.</p>
+        </section>
+
+        <section class="initiatives-grid">
+            <div class="initiative-card">
+                <h3>Academic Excellence</h3>
+                <p>Develop strong foundations in computing through specialized coursework, study groups, and academic support services.</p>
+            </div>
+            <div class="initiative-card">
+                <h3>Research Projects</h3>
+                <p>Engage in cutting-edge research projects under faculty supervision, gaining valuable experience in computing research.</p>
+            </div>
+            <div class="initiative-card">
+                <h3>Community Service</h3>
+                <p>Participate in outreach programs and community service initiatives to promote computing education and diversity.</p>
+            </div>
+            <div class="initiative-card">
+                <h3>Professional Development</h3>
+                <p>Access workshops, networking events, and career development resources to prepare for your future in computing.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Join the STARS Program</h2>
+            <p>Are you passionate about computing and interested in combining academic excellence with community service?</p>
+            <a href="#" class="cta-button">Apply Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: [Contact Email]</p>
+                <p>Phone: [Contact Phone]</p>
+            </div>
+            <div>
+                <h3>Address</h3>
+                <p>Georgia State University</p>
+                <p>Department of Computer Science</p>
+                <p>[Building and Room Number]</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p>[Social Media Links]</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
